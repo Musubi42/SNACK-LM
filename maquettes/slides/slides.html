@@ -1,15 +1,35 @@
-<!-- Bouton test défilement manuel -->
-<button id="nextSlide" onclick="manualSlide()">Manual Slide</button>
+<!-- Notes de MAJ
+
+    ****v1.0 - 07/03/2021
+    - Le module est terminé et prêt à être utilisé sur smartphone
+    - Pistes d'amélioration :
+        - Rendre le module responsive tablette/PC
+        - Utiliser une flex box pour les boutons de saut afin d'éviter un dépassement si trop d'images
+        - Animer le défilement
+        
+-->
+
+<!-- CSS lié au diaporama -->
+<link rel="stylesheet" href="slides.css">
 
 <!-- Diaporama -->
-<div id="slideshow">
-    <img src="images/Kebab-frites.png" alt="Kebab-frites" />
-    <img src="images/Burger.png" alt="Burger" />
-    <img src="images/Assiette.png" alt="Assiette" />
+<div id="slide-system">
+
+    <!-- Bouton de défilement manuel -->
+    <button id="nextSlide" onclick="nextSlide()">&gt;</button>
+    <button id="previousSlide" onclick="previousSlide()">&lt;</button>
+
+    <!-- Mode d'emploi : simplement ajouter ou retirer des <img> ci-dessous, le reste est automatique -->
+    <div id="slideshow">
+        <img src="images/Kebab-frites.png" alt="Kebab-frites" />
+        <img src="images/Burger.png" alt="Burger" />
+        <img src="images/Assiette.png" alt="Assiette" />
+    </div>
+
+    <!-- Boutons de saut -->
+    <div id="leap"></div>
+
 </div>
 
-<!-- Boutons 1 2 3 en forme de ronds ... à faire-->
-<span id="timeline"></span>
-
-<!-- Script lié au diaporama -->
+<!-- JS lié au diaporama -->
 <script src="slides.js"></script>
