@@ -1,10 +1,25 @@
+<!-- Notes de MAJ
+
+    ****v1.0 - 07/03/2021
+    - Le module est encore en phase maquettage
+    - Pistes d'amélioration :
+        - Améliorer l'esthétique selon la charte graphique en attente
+        - Développer la partie tablette/PC
+        
+-->
+
+<!-- CSS lié au header -->
+<link rel="stylesheet" href="header.css">
+
+<!-- Header générique -->
 <header>
-    <!-- Barre Snack LM -->
+
+    <!-- Titre Snack LM, lien vers l'accueil -->
     <div id="top-bar">
-        <a id="top-name" href="index.html">Snack LM</a>
+        <a id="top-name" href="../index.html">Snack LM</a>
     </div>
 
-    <!-- Nav smartphone -->
+    <!-- Menu de navigation smartphone -->
     <div id="sidenav">
         <a href="javascript:void(0)" class="close-button" onclick="closeNav()">&times;</a>
         <a href="../index.html">Accueil</a>
@@ -14,12 +29,12 @@
     </div>
     <span id="top-nav-button" onclick="openNav()">&#9776;</span>
 
-    <!-- Bouton compte utilisateur-->
+    <!-- Lien vers le compte utilisateur-->
     <a id="top-user-button" href="../user.html">
-        <img src="images/user-account.png" alt="user" width="40">
+        <img src="images/user-account.png" alt="user">
     </a>
 
-    <!-- Script lié au menu -->
-    <script src="top-nav.js"></script>
+    <!-- JS lié au header -->
+    <script src="header.js"></script>
 
 </header>
