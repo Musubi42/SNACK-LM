@@ -1,13 +1,9 @@
-body{
+body {
     background-color: white;
     margin: 0;
 }
-#top-name{
-    font-size: 36px;
-    text-decoration: none;
-    color: black;
-}
-#top-bar{
+
+#top-bar {
     width: 100%;
     text-align: center;
     height: 50px;
@@ -15,7 +11,14 @@ body{
     background-color: yellow;
     border-bottom: 1px black solid;
 }
-#top-menu-button{
+
+#top-name {
+    font-size: 36px;
+    text-decoration: none;
+    color: black;
+}
+
+#top-nav-button {
     font-size: 30px;
     position: absolute;
     height: 45px;
@@ -23,14 +26,7 @@ body{
     width: 40px;
     left: 10px;
 }
-#top-user-button{
-    border-radius: 50%;
-    position: absolute;
-    height: 45px;
-    top: 8px;
-    width: 40px;
-    right: 10px;
-}
+
 #sidenav {
     height: 100%;
     width: 0;
@@ -40,34 +36,48 @@ body{
     left: 0;
     background-color: red;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: .5s;
     padding-top: 60px;
-  }
-  
-  #sidenav a {
+}
+
+#sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: white;
     display: block;
-    transition: 0.3s;
-    overflow:hidden;
-    white-space:nowrap;
-  }
-  
-  #sidenav a:hover{
+    transition: .3s;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#sidenav a:hover {
     color: black;
-  }
-  
-  #sidenav .close-button {
+}
+
+#sidenav .close-button {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    #sidenav {padding-top: 15px;}
-    #sidenav a {font-size: 18px;}
-  }
+}
+
+#top-user-button {
+    border-radius: 50%;
+    position: absolute;
+    height: 45px;
+    top: 8px;
+    width: 40px;
+    right: 10px;
+}
+
+@media screen and (max-height:450px) {
+    #sidenav {
+        padding-top: 15px;
+    }
+
+    #sidenav a {
+        font-size: 18px;
+    }
+}

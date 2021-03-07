@@ -9,9 +9,17 @@
     <title>Snack LM</title>
 </head>
 
+<!-- Site conçu d'abord pour smartphone puis à adapter tablette et PC plus tard
+car cible davantage une utilisation smartphone -->
+
 <body>
     <header>
+        <!-- Barre Snack LM -->
+        <div id="top-bar">
+            <a id="top-name" href="index.html">Snack LM</a>
+        </div>
 
+        <!-- Nav smartphone -->
         <div id="sidenav">
             <a href="javascript:void(0)" class="close-button" onclick="closeNav()">&times;</a>
             <a href="index.html">Accueil</a>
@@ -19,10 +27,9 @@
             <a href="restaurant.html">Notre restaurant</a>
             <a href="contact.html">Contact</a>
         </div>
-        <div id="top-bar">
-            <a id="top-name" href="index.html">Snack LM</a>
-        </div>
         <span id="top-menu-button" onclick="openNav()">&#9776;</span>
+
+        <!-- Bouton compte utilisateur-->
         <a id="top-user-button" href="user.html">
             <img src="images\user-account.png" alt="user" width="40">
         </a>
