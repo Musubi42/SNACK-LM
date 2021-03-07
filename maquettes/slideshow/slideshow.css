@@ -3,7 +3,7 @@ body {
     margin: 0;
 }
 
-#slide-system {
+#slideshow-system {
     position: relative;
     display: block;
     width: 100%;
@@ -22,8 +22,8 @@ body {
     width: 100%;
 }
 
-#nextSlide,
-#previousSlide {
+#next-slide,
+#previous-slide {
     margin: 8px auto;
     display: block;
     position: absolute;
@@ -38,11 +38,11 @@ body {
     font-size: 30px;
 }
 
-#nextSlide {
+#next-slide {
     right: 0;
 }
 
-#previousSlide {
+#previous-slide {
     left: 0;
 }
 
