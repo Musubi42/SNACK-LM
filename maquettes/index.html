@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Snack LM</title>
+</head>
+
+<body>
+    <header>
+
+        <div id="sidenav">
+            <a href="javascript:void(0)" class="close-button" onclick="closeNav()">&times;</a>
+            <a href="index.html">Accueil</a>
+            <a href="la-carte.pdf">La Carte</a>
+            <a href="restaurant.html">Notre restaurant</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div id="top-bar">
+            <a id="top-name" href="index.html">Snack LM</a>
+        </div>
+        <span id="top-menu-button" onclick="openNav()">&#9776;</span>
+        <a id="top-user-button" href="user.html">
+            <img src="images\user-account.png" alt="user" width="40">
+        </a>
+    </header>
+
+    <script>
+        function openNav() {
+            document.getElementById("sidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("sidenav").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>
