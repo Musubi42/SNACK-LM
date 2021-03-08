@@ -1,0 +1,61 @@
+<!-- CSS liés au slider -->
+<link rel="stylesheet" href="swiper/swiper.css" /> <!-- swiper-bundle.min.css moins les lignes inutiles -->
+<style>
+    .swiper-container { /* Taille */
+        width: 90%; 
+    }
+    .swiper-slide img{
+        width: 100%;
+    }
+</style>
+
+<!-- Container principal -->
+<div class="swiper-container">
+
+    <!-- Gère les fonctions de défilement -->
+    <div class="swiper-wrapper">
+
+        <!-- Le contenu -->
+        <div class="swiper-slide">
+            <img src="swiper/images/Kebab-frites.png" alt="Kebab-frites" />
+        </div>
+        <div class="swiper-slide">
+            <img src="swiper/images/Burger.png" alt="Burger" />
+        </div>
+        <div class="swiper-slide">
+            <img src="swiper/images/Assiette.png" alt="Assiette" />
+        </div>
+    </div>
+
+    <!-- Les boutons en bas -->
+    <div class="swiper-pagination swiper-pagination-black"></div>
+
+    <!-- Les boutons suivant/précédent -->
+    <div class="swiper-button-prev swiper-button-black"></div>
+    <div class="swiper-button-next swiper-button-black"></div>
+</div>
+
+<!-- Scripts liés au slider -->
+<script src="swiper/swiper.js"></script><!-- swiper-bundle.min.js complet -->
+<script>
+    const swiper = new Swiper('.swiper-container', {
+  // Paramètres optionnels
+  direction: 'horizontal',
+  loop: true,
+  autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+
+  // Les boutons en bas
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Les boutons suivant/précédent
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+</script>
