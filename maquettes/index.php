@@ -26,9 +26,9 @@ car cible davantage une utilisation smartphone -->
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
         nisi ut aliquip ex ea commodo consequat.
     </p>
-
+    <?php include 'slideshow/slideshow.html';  ?>
     <img id="carte" src="images/Carte.png" alt="Carte">
-    <!-- php include 'slideshow/slideshow.html';  -->
+    
 
 </body>
 
