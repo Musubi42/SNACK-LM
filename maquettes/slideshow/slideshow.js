@@ -40,18 +40,18 @@ function autoSlide() { // Démarrer le mode automatique
     slide = setInterval(function () {
         incrementIndex(); // Cibler l'image suivante
         refreshSlide(); // Afficher l'image ciblée
-    }, 3000);
+    }, 4500);
 }
 
 function nextSlide() {
-    clearInterval(slide); // Arrêter le mode automatique
+    clearInterval(window.slide); // Arrêter le mode automatique
     incrementIndex(); // Cibler l'image suivante
     refreshSlide(); // Afficher l'image ciblée
     autoSlide(); // Démarrer le mode automatique
 }
 
 function previousSlide() {
-    clearInterval(slide); // Arrêter le mode automatique
+    clearInterval(window.slide); // Arrêter le mode automatique
     decrementIndex() // Cibler l'image précédente
     refreshSlide(); // Afficher l'image ciblée
     autoSlide(); // Démarrer le mode automatique
