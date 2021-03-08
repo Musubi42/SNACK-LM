@@ -27,11 +27,9 @@ car cible davantage une utilisation smartphone -->
         nisi ut aliquip ex ea commodo consequat.
     </p>
 
-    <?php include 'slideshow/slideshow.html'; ?>
+    <?php include 'swiper/swiper.html'; ?>
 
     <div style="margin:8px"></div>
-
-    <img id="carte" src="images/Carte.png" alt="Carte">
 
 </body>
 
