@@ -2,15 +2,52 @@ body {
     background-color: white;
     margin: 0;
 }
-h1, h2, h3, h4, h5, h6, p{
+
+em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin-left: 8px;
     margin-right: 8px;
+}
+
+.center{
     text-align: center;
 }
 
-#carte{
-    width: 96%;
-    margin:0 auto;
-    display: block;
-    border: 1px solid black;
+
+#call,
+#order {
+    width: 80%;
+    height: 45px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-shadow: 0 0 2px black;
+    border: 2px solid black;
+    position: relative;
+}
+
+#call {
+    margin: 8px auto;
+    background-color: rgb(72, 221, 72);
+}
+
+#order {
+    margin: 0 auto;
+    background-color: rgb(235, 20, 20);
+}
+
+#call:active,
+#order:active {
+    top: 3px;
 }

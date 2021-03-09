@@ -13,23 +13,28 @@
 car cible davantage une utilisation smartphone -->
 
 <body>
+
+    <?php include 'alert/alert.html'; ?>
+
     <?php include 'header/header.html'; ?>
-    <div style="text-align:center">
-        <button style="width:80%;margin:8px 8px 4px 8px;height:30px">Appelez-nous</button>
-        <button style="width:80%;margin:4px 8px 8px 8px;height:30px">Commandez en ligne</button>
+    <div class="center">
+        <a href="tel:+33 3 20 19 54 10"><button id="call">APPELEZ-NOUS</button></a>
+        <button id="order">COMMANDEZ EN LIGNE</button>
     </div>
 
-    <h2>Snack LM, Lorem ipsum...</h2>
+    <h2 class="center">Snack LM : N°1 à Marbrerie</h2>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat.
+        Une faim de loup ? Pas d'inquiétude, nous prenons la situation en main.<br>
+        Venez découvrir nos recettes : nos burger, nos kebab, de même que nos assiettes, galettes et tacos.<br>
+        Une envie soudaine de vous régaler ? Alors n'hésitez plus,
+        appelez-nous ou passez commande en ligne.<br>
+        <em>Jusqu'au 31/08, bénéficiez de deux livraisons offertes.</em>
+    </p>
+    <p>
+        Quelques photos prises par nos heureux clients :
     </p>
 
     <?php include 'swiper/swiper.html'; ?>
-
-    <div style="margin:8px"></div>
 
 </body>
 
