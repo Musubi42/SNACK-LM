@@ -1,0 +1,367 @@
+/* General styles */
+
+html {
+    font-size: 125%;
+    /* font-size:125% -> 1rem = 20px
+    font-size:67.5%% -> 1rem = 10px
+    voir Google pour comprendre l'interet des rem */
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: black;
+}
+
+body {
+    /* background-color: rgb(230, 230, 230); */
+    background-color: #F4F5F5;
+    margin: 0;
+}
+
+.red {
+    color: red !important;
+}
+
+.black-price {
+    text-align: right;
+    font-size: 0.75rem;
+}
+
+#content {
+    position: absolute;
+    padding-top: 60px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+/* style sur le texte */
+
+em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #352C2C;
+    text-shadow: 0px 1px 2px grey;
+    font-family: 'Lobster', cursive !important;
+}
+
+p {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.float-left {
+    display: block;
+    float: left;
+}
+
+.float-center {
+    display: block;
+    float: left;
+}
+
+.float-right {
+    display: block;
+    float: right;
+}
+
+.price {
+    text-align: right;
+    width: 22.5%;
+    font-size: 0.75rem;
+    color: grey;
+}
+
+hr {
+    width: 20%;
+    border-bottom: 0;
+    color: grey;
+}
+
+.no-display {
+    display: none !important;
+}
+
+.force-display {
+    display: table !important;
+}
+
+/* mettre table en display:block et tbody en display:table permet de réduire les tableaux avec collapsible et ses dérivés */
+
+table {
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+}
+
+tbody {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: table;
+}
+
+td {
+    padding: 2px;
+    margin: 0;
+}
+
+a.sneaky {
+    text-decoration: none;
+    color: black;
+}
+
+a.wide {
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    padding: 12px 8px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Styles de boutons à utiliser sans modération 
+3 tailles : 40% par défaut, 60% medium, 80% large */
+
+.green-button, .red-button {
+    /* centers the anchor */
+    display: table;
+    margin: 10px auto;
+    z-index: 0;
+    /* centers the text vertically */
+    height: 45px;
+    line-height: 45px;
+    /* allows animation */
+    position: relative;
+    cursor: pointer;
+    width: 40%;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 0 5px black;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 1px 3px 1px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 3px 1px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 3px 1px 1px rgba(0, 0, 0, 0.75);
+}
+
+.green-button {
+    background-color: rgb(30, 220, 30);
+}
+
+.red-button {
+    background-color: rgb(220, 30, 30);
+}
+
+.green-button:hover {
+    background-color: rgb(20, 200, 20);
+}
+
+.red-button:hover {
+    background-color: rgb(200, 20, 20);
+}
+
+/* Animation du bouton */
+
+.green-button:active, .red-button:active {
+    top: 3px;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.75);
+}
+
+/* tailles alternatives */
+
+.green-button.medium, .red-button.medium {
+    width: 60%;
+}
+
+.green-button.large, .red-button.large {
+    width: 80%;
+}
+
+/* Pour avoir les deux boutons sur la même ligne, les mettre dans un div flex-buttons */
+
+.flex-buttons {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 0 3.75%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.flex-buttons .green-button, .flex-buttons .red-button {
+    display: inline-block;
+    margin: 10px 3.75%;
+}
+
+/* Pour marger à gauche et droite utiliser margined, éviter de mettre les boutons dans cette div mais le css est là au cas où */
+
+.margined {
+    margin: 0 7.5%;
+}
+
+.margined .red-button, .margined .green-button {
+    width: 47.06%;
+}
+
+.margined .green-button.medium, .margined .red-button.medium {
+    width: 70.59%;
+}
+
+.margined .green-button.large, .margined .red-button.large {
+    width: 94.12%;
+}
+
+/* Boutons + et - à utiliser partout */
+
+.minus-button, .plus-button {
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: white;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 1rem;
+}
+
+/* croix (bouton fermer) : <a>&times;</a> */
+
+.cross {
+    position: absolute;
+    display: block;
+    float: right;
+    right: 0;
+    top: 0;
+    text-align: right;
+    padding: 5px 15px;
+    width: auto;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: black;
+}
+
+/* Voir note dans collapsible.js  */
+
+.collapsible+*, .arrow+*, .one-by-one+*, .one-by-one-arrow+*,
+/* Pour les éléments à réduire de force : force-coll */
+
+.force-coll {
+    display: block;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    max-height: 0;
+}
+
+.arrow-icon {
+    background-image: url('http://www.snack-lm.fr/img/arrow-icon.png');
+    background-size: 12px;
+    background-position: 0px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 5px;
+    width: 12px;
+    height: 12px;
+    transition: transform 0.2s ease-out;
+    /* Rendre la flèche noire */
+    filter: brightness(0);
+}
+
+.rotate {
+    transform: rotate(-180deg);
+    transition: transform 0.2s ease-out;
+}
+
+/* JS du slider dans func-library */
+
+#slider {
+    width: 100%;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+}
+
+#slider>* {
+    transition: left 0.1s ease-out;
+    position: absolute;
+    padding-top: 60px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#slider>*.future {
+    overflow-x: hidden;
+    left: 100%;
+}
+
+#slider>*.past {
+    overflow-x: hidden;
+    left: -100%;
+}
+
+/* Forms */
+
+form {
+    width: 100%;
+    margin: 0;
+}
+
+form .fill-in {
+    border-radius: 1px;
+    height: 35px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+}
+
+form textarea {
+    padding: 10px;
+    line-height: 1.5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 200px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px #999;
+    -webkit-box-shadow: 1px 1px 1px #999;
+    -moz-box-shadow: 1px 1px 1px #999;
+}
